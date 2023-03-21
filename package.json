@@ -7,9 +7,11 @@
     "url": "git+https://github.com/cuiqg/prettier-config.git"
   },
   "author": "Tsuiqg <i@tsuiqg.xyz> (https://tsuiqg.xyz/)",
-  "license": "UNLICENSED",
-  "private": true,
-  "publishConfig": {"access": "public"},
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
   "files": [
     "prettier.json",
     ".prettierignore"

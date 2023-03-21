@@ -11,3 +11,6 @@ yarn add @cuiqg/prettier-config -D
   "prettier": "@cuiqg/prettier-config"
 }
 ```
+
+### License
+[MIT](LICENSE) License © 2023-PRESENT Tsuiqg
