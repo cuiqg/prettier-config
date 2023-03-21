@@ -13,4 +13,4 @@ npm i @cuiqg/prettier-config -D
 ```
 
 ### License
-[MIT](LICENSE) License © 2023-PRESENT Tsuiqg
+[MIT](LICENSE) License © 2023 Tsuiqg

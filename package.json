@@ -1,6 +1,6 @@
 {
   "name": "@cuiqg/prettier-config",
-  "description": "🫶 Prettier config for Tsuiqg",
+  "description": "🧸 Prettier config for Tsuiqg",
   "version": "0.3.0",
   "main": "prettier.json",
   "repository": {
@@ -10,8 +10,7 @@
   "author": "Tsuiqg <i@tsuiqg.xyz> (https://tsuiqg.xyz/)",
   "license": "MIT",
   "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npmjs.org"
+    "access": "public"
   },
   "files": [
     "prettier.json",
