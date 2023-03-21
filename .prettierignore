@@ -1,0 +1,10 @@
+build/
+coverage/
+dist/
+node_modules/
+.cache/
+.next
+.circleci
+package*.json
+yarn-lock.json
+*.snap

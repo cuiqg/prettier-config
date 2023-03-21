@@ -1,0 +1,17 @@
+{
+  "name": "@cuiqg/prettier-config",
+  "version": "0.0.1",
+  "main": "prettier.json",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cuiqg/prettier-config.git"
+  },
+  "author": "Tsuiqg <i@tsuiqg.xyz> (https://tsuiqg.xyz/)",
+  "license": "UNLICENSED",
+  "private": true,
+  "publishConfig": {"access": "public"},
+  "files": [
+    "prettier.json",
+    ".prettierignore"
+  ]
+}
