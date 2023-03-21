@@ -3,7 +3,7 @@ This is `prettier` config for my projects. If you like this style, you can also 
 ### Usage
 1. Install:
 ```bash
-yarn add @cuiqg/prettier-config -D
+npm i @cuiqg/prettier-config -D
 ```
 2. Configure (`package.json`):
 ```json
