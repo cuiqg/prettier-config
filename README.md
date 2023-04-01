@@ -1,16 +1,17 @@
-## Prettier config
-This is `prettier` config for my projects. If you like this style, you can also quote it in your project.
-### Usage
-1. Install:
-```bash
-npm i @cuiqg/prettier-config -D
-```
-2. Configure (`package.json`):
-```json
-{
-  "prettier": "@cuiqg/prettier-config"
-}
-```
+# @cuiqg/prettier-config
+Shared Prettier config used by tsuiqg. 
 
-### License
-[MIT](LICENSE) License © 2023 Tsuiqg
+## Usage
+
+Usage is based on [Sharing configurations](https://prettier.io/docs/en/configuration.html#sharing-configurations) from the Prettier docs.
+
+1. Remove existing `.prettierrc` file, if present.
+
+2. Install the config:
+```bash
+npm i -D @cuiqg/prettier-config
+```
+3. Add the following to `package.json`:
+```json
+  "prettier": "@cuiqg/prettier-config"
+```
