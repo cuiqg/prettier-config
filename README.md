@@ -13,5 +13,7 @@ npm i -D @cuiqg/prettier-config
 ```
 3. Add the following to `package.json`:
 ```json
+{
   "prettier": "@cuiqg/prettier-config"
+}
 ```
