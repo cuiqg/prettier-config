@@ -1,5 +1,6 @@
 # @cuiqg/prettier-config
-Shared Prettier config used by tsuiqg. 
+
+![npm](https://img.shields.io/npm/v/@cuiqg/prettier-config?color=%23ff4777&label=)
 
 ## Usage
 
