@@ -1,6 +1,6 @@
 # @cuiqg/prettier-config
 
-![npm](https://img.shields.io/npm/v/@cuiqg/prettier-config?color=%23ff4777&label=)
+[![npm](https://img.shields.io/npm/v/@cuiqg/prettier-config?color=%23ff4777&label=)](https://www.npmjs.com/package/@cuiqg/prettier-config)
 
 ## Usage
 
