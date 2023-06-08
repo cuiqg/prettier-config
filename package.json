@@ -1,7 +1,7 @@
 {
   "name": "@cuiqg/prettier-config",
-  "description": "🧸 Prettier config for Tsuiqg",
-  "version": "1.0.0",
+  "description": "Tsuiqg's Prettier Config",
+  "version": "1.0.1",
   "main": "index.js",
   "repository": {
     "type": "git",
