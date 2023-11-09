@@ -1,7 +1,7 @@
 {
   "name": "@cuiqg/prettier-config",
   "description": "Tsuiqg's Prettier Config",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "main": "index.js",
   "files": [
     "index.js"
