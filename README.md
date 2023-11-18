@@ -13,8 +13,8 @@ Usage is based on [Sharing configurations](https://prettier.io/docs/en/configura
 npm i -D @cuiqg/prettier-config
 ```
 3. Add the following to `package.json`:
-```json
+```diff
 {
-  "prettier": "@cuiqg/prettier-config"
++  "prettier": "@cuiqg/prettier-config"
 }
 ```
