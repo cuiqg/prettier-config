@@ -1,21 +1,22 @@
+/** @type {import('prettier').Config} */
 module.exports = {
   printWidth: 120,
   tabWidth: 2,
   useTabs: false,
   semi: false,
   singleQuote: true,
-  quoteProps: "as-needed",
+  quoteProps: 'as-needed',
   jsxSingleQuote: false,
-  trailingComma: "es5",
+  trailingComma: 'all',
   bracketSpacing: true,
   bracketSameLine: false,
   jsxBracketSameLine: false,
-  arrowParens: "avoid",
+  arrowParens: 'avoid',
   requirePragma: false,
   insertPragma: false,
-  proseWrap: "preserve",
+  proseWrap: 'preserve',
   vueIndentScriptAndStyle: true,
-  endOfLine: "lf",
+  endOfLine: 'lf',
   singleAttributePerLine: true,
-  editorconfig: true
+  editorconfig: true,
 }

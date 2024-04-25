@@ -1,8 +1,7 @@
 {
   "name": "@cuiqg/prettier-config",
   "description": "Tsuiqg's Prettier Config",
-  "version": "1.0.6",
-  "main": "index.js",
+  "version": "1.0.7",
   "files": [
     "index.js"
   ],
@@ -17,7 +16,7 @@
     "registry": "https://registry.npmjs.org"
   },
   "devDependencies": {
-    "prettier": "^3.0.3"
+    "prettier": "^3.2.5"
   },
   "prettier": "./index.js"
 }
