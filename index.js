@@ -1,37 +1,10 @@
 /** @type {import('prettier').Config} */
 module.exports = {
+  printWidth: 120,
   semi: false,
   singleQuote: true,
-  trailingComma: 'all',
-  editorconfig: true,
-  overrides: [
-    {
-      files: [
-        '**/node_modules/**',
-        '**/dist/**',
-        '**/output/**',
-        '**/coverage/**',
-        '**/temp/**',
-        '**/.vitepress/cache/**',
-        '**/.nuxt/**',
-        '**/.vercel/**',
-        '**/.changeset/**',
-        '**/.idea/**',
-        '**/.output/**',
-        '**/.vite-inspect/**',
-
-        '**/CHANGELOG*.md',
-        '**/*.min.*',
-        '**/LICENSE*',
-        '**/__snapshots__',
-        '**/auto-import?(s).d.ts',
-        '**/components.d.ts',
-        '**/typed-router.d.ts',
-        '**/pnpm-lock.yaml',
-      ],
-      options: {
-        requirePragma: true,
-      },
-    },
-  ],
-}
+  bracketSpacing: false,
+  trailingComma: "all",
+  arrowParens: "avoid",
+  endOfLine: "lf",
+};
