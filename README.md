@@ -4,17 +4,18 @@
 
 ## Usage
 
-Usage is based on [Sharing configurations](https://prettier.io/docs/en/configuration.html#sharing-configurations) from the Prettier docs.
+Install the package using `npm` (or `yarn`):
 
-1. Remove existing `.prettierrc` file, if present.
-
-2. Install the config:
-```bash
-npm i -D @cuiqg/prettier-config
+```sh
+npm install --save-dev @cuiqg/prettier-config
 ```
-3. Add the following to `package.json`:
+
+Add the `prettier` following to `package.json`:
+
 ```diff
 {
 +  "prettier": "@cuiqg/prettier-config"
 }
 ```
+
+[Check out the `prettier` documentation for more info on sharing configurations](https://prettier.io/docs/en/configuration.html#sharing-configurations)
