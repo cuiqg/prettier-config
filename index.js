@@ -11,7 +11,6 @@ module.exports = {
   singleAttributePerLine: true,
   vueIndentScriptAndStyle: false,
   plugins: [
-    "prettier-plugin-packagejson",
     "prettier-plugin-tailwindcss",
     "@shufo/prettier-plugin-blade",
     "@trivago/prettier-plugin-sort-imports",
