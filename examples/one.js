@@ -1,3 +1,5 @@
+import fs from 'node:fs'
+
 const obj = {
   one: 1,
   two: 2,
