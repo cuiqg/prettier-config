@@ -2,7 +2,7 @@
 
 ## Usage
 
-Install the package using `npm` (or `yarn`):
+Install the package:
 
 ```sh
 npm install --save-dev @cuiqg/prettier-config

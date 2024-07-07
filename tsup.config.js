@@ -5,6 +5,5 @@ export default defineConfig({
   format: ['cjs', 'esm'],
   shims: true,
   clean: true,
-  minify: true,
   target: 'esnext'
 })
