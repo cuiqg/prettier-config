@@ -1,31 +1,48 @@
 {
   "name": "@cuiqg/prettier-config",
-  "description": "Prettier config for @cuiqg",
   "version": "1.1.6",
-  "main": "./index.js",
+  "description": "Prettier config for @cuiqg",
   "type": "module",
-  "files": [
-    "index.js"
+  "keywords": [
+    "prettier-config"
   ],
+  "license": "UNLICENSED",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cuiqg/prettier-config.git"
   },
   "author": "Tsuiqg <i@tsuiqg.me>",
-  "license": "UNLICENSED",
-  "keywords": [
-    "prettier-config"
+  "files": [
+    "dist"
   ],
-  "scripts": {
-    "release": "bumpp && npm publish"
+  "main": "./dist/index.js",
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.js"
+    }
   },
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org"
   },
-  "devDependencies": {
-    "bumpp": "^9.4.1",
-    "prettier": "^3.3.2"
+  "scripts": {
+    "build": "tsup",
+    "lint": "eslint .",
+    "prepack": "npm run build",
+    "release": "bumpp && npm publish",
+    "prepare": "husky"
   },
-  "prettier": "./index.js"
+  "devDependencies": {
+    "@cuiqg/eslint-config": "^2.1.9",
+    "bumpp": "^9.4.1",
+    "eslint": "^9.6.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.7",
+    "prettier": "^3.3.2",
+    "tsup": "^8.1.0"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
+  }
 }
