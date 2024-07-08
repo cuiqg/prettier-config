@@ -1,6 +1,6 @@
 {
   "name": "@cuiqg/prettier-config",
-  "version": "1.1.7",
+  "version": "1.1.8",
   "description": "Prettier config for @cuiqg",
   "type": "module",
   "keywords": [
