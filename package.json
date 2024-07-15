@@ -28,22 +28,19 @@
   },
   "scripts": {
     "build": "tsup",
-    "lint": "eslint .",
     "prepack": "npm run build",
     "release": "bumpp && npm publish",
     "prepare": "simple-git-hooks"
   },
   "devDependencies": {
-    "@cuiqg/eslint-config": "^2.1.9",
     "bumpp": "^9.4.1",
-    "eslint": "^9.6.0",
     "lint-staged": "^15.2.7",
     "prettier": "^3.3.2",
     "simple-git-hooks": "^2.11.1",
     "tsup": "^8.1.0"
   },
   "lint-staged": {
-    "*": "eslint --fix"
+    "*.{js}": "prettier --write"
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"
