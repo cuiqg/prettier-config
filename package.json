@@ -17,6 +17,7 @@
   ],
   "main": "./dist/index.mjs",
   "types": "./dist/index.d.mts",
+  "module": "./dist/index.mjs",
   "exports": {
     ".": "./dist/index.mjs",
     "./package.json": "./package.json"
@@ -43,6 +44,5 @@
   },
   "resolutions": {
     "bin-wrapper": "npm:bin-wrapper-china"
-  },
-  "module": "./dist/index.mjs"
+  }
 }
