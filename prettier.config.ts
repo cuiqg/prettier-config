@@ -1,5 +1,5 @@
-import cuiqgPrettierConfig from './dist/index.mjs'
+import cuiqg from './dist/index.mjs'
 
 export default {
-  ...cuiqgPrettierConfig,
+  ...cuiqg,
 }
