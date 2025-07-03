@@ -1,8 +1,10 @@
+import { fileURLToPath } from 'node:url'
+import type { Config } from 'prettier'
 /**
  * @see https://prettier.io/docs/en/configuration.html
  * @type {import("prettier").Config}
  */
-const config = {
+const config: Config = {
   experimentalTernaries: false,
   printWidth: 100,
   tabWidth: 2,
@@ -24,6 +26,7 @@ const config = {
   embeddedLanguageFormatting: 'auto',
   singleAttributePerLine: true,
   editorconfig: true,
+  plugins: [fileURLToPath(import.meta.resolve('@prettier/plugin-oxc'))],
 }
 
 export default config

@@ -1,6 +1,6 @@
 {
   "name": "@cuiqg/prettier-config",
-  "version": "1.1.9",
+  "version": "1.1.10",
   "description": "Prettier config for @cuiqg",
   "type": "module",
   "keywords": [
@@ -15,11 +15,18 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/index.js",
+  "main": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
   "exports": {
     ".": {
-      "require": "./dist/index.cjs",
-      "import": "./dist/index.js"
+      "require": {
+        "default": "./dist/index.cjs",
+        "types": "./dist/index.d.cts"
+      },
+      "import": {
+        "default": "./dist/index.mjs",
+        "types": "./dist/index.d.mts"
+      }
     }
   },
   "publishConfig": {
@@ -27,22 +34,21 @@
     "registry": "https://registry.npmjs.org"
   },
   "scripts": {
-    "build": "tsup",
-    "prepack": "npm run build",
+    "build": "tsdown",
+    "dev": " tsdown --watch",
     "release": "bumpp && npm publish",
-    "prepare": "simple-git-hooks"
+    "preinstall": "npx force-resolutions"
   },
   "devDependencies": {
+    "@prettier/plugin-oxc": "^0.0.4",
+    "@types/node": "^24.0.10",
     "bumpp": "^9.4.1",
-    "lint-staged": "^15.2.7",
-    "prettier": "^3.3.2",
-    "simple-git-hooks": "^2.11.1",
-    "tsup": "^8.1.0"
+    "prettier": "^3.6.2",
+    "tsdown": "^0.12.9",
+    "typescript": "^5.8.3",
+    "unplugin-unused": "^0.5.1"
   },
-  "lint-staged": {
-    "*.js": "prettier --write"
-  },
-  "simple-git-hooks": {
-    "pre-commit": "npx lint-staged"
+  "resolutions": {
+    "bin-wrapper": "npm:bin-wrapper-china"
   }
 }
