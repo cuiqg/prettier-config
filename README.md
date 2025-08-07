@@ -6,13 +6,11 @@
 npm i -D @cuiqg/prettier-config
 ```
 
-创建 `prettier.config.js`:
+创建 `package.json`:
 
-```js
-import cuiqgPrettierConfig from '@cuiqg/prettier-config'
-
-export default {
-  ...cuiqgPrettierConfig
+```diff json
+{
++ "prettier": "@cuiqg/prettier-config"
 }
 ```
 
