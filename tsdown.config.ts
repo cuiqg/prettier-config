@@ -12,7 +12,7 @@ export default defineConfig({
    unused: {
     level: 'error',
     ignore: [
-      'typescript', // Yarn PnP
+      'typescript'
     ],
   },
 })

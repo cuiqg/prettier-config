@@ -1,6 +1,6 @@
 {
   "name": "@cuiqg/prettier-config",
-  "version": "1.1.11",
+  "version": "1.1.12",
   "description": "Prettier config for @cuiqg",
   "type": "module",
   "keywords": [
@@ -28,12 +28,13 @@
   },
   "scripts": {
     "build": "tsdown",
-    "dev": " tsdown --watch",
-    "release": "bumpp && npm publish",
-    "preinstall": "npx force-resolutions"
+    "dev": "tsdown --watch",
+    "release": "bumpp && npm publish"
+  },
+   "dependencies": {
+    "@prettier/plugin-oxc": "^0.0.4"
   },
   "devDependencies": {
-    "@prettier/plugin-oxc": "^0.0.4",
     "@types/node": "^24.0.10",
     "bumpp": "^9.4.1",
     "prettier": "^3.6.2",
@@ -42,7 +43,5 @@
     "typescript": "^5.8.3",
     "unplugin-unused": "^0.5.1"
   },
-  "resolutions": {
-    "bin-wrapper": "npm:bin-wrapper-china"
-  }
+  "prettier": "./dist/index.mjs"
 }
