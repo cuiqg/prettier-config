@@ -6,7 +6,7 @@
 npm i -D @cuiqg/prettier-config
 ```
 
-创建 `package.json`:
+修改 `package.json`：
 
 ```diff json
 {
