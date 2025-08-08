@@ -2,11 +2,13 @@
 
 ## 使用
 
+1. 安装
+
 ```sh
 npm i -D @cuiqg/prettier-config
 ```
 
-修改 `package.json`：
+2. 修改 `package.json`：
 
 ```diff json
 {
