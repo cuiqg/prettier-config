@@ -1,10 +1,10 @@
-import { fileURLToPath } from 'node:url'
+import * as pluginOxc from '@prettier/plugin-oxc'
 import type { Config } from 'prettier'
+import * as pluginTailwindcss from 'prettier-plugin-tailwindcss'
 /**
  * @see https://prettier.io/docs/en/configuration.html
- * @type {import("prettier").Config}
  */
-const config: Config = {
+const config: Config & pluginTailwindcss.PluginOptions = {
   experimentalTernaries: false,
   printWidth: 100,
   tabWidth: 2,
@@ -25,8 +25,7 @@ const config: Config = {
   endOfLine: 'lf',
   embeddedLanguageFormatting: 'auto',
   singleAttributePerLine: true,
-  editorconfig: true,
-  plugins: [fileURLToPath(import.meta.resolve('@prettier/plugin-oxc'))],
+  plugins: [pluginOxc, pluginTailwindcss],
 }
 
 export default config

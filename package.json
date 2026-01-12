@@ -15,11 +15,14 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/index.mjs",
-  "types": "./dist/index.d.mts",
-  "module": "./dist/index.mjs",
+  "main": "./dist/index.cjs",
+  "types": "./dist/index-ng7FzSad.d.cts",
+  "module": "./dist/index.js",
   "exports": {
-    ".": "./dist/index.mjs",
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
     "./package.json": "./package.json"
   },
   "publishConfig": {
@@ -29,10 +32,13 @@
   "scripts": {
     "build": "tsdown",
     "dev": "tsdown --watch",
-    "release": "bumpp && npm publish"
+    "release": "bumpp && npm publish",
+    "format": "prettier -w .",
+    "typecheck": "tsc --noEmit"
   },
-   "dependencies": {
-    "@prettier/plugin-oxc": "^0.0.4"
+  "dependencies": {
+    "@prettier/plugin-oxc": "^0.0.4",
+    "prettier-plugin-tailwindcss": "^0.7.2"
   },
   "devDependencies": {
     "@types/node": "^24.0.10",
@@ -40,8 +46,7 @@
     "prettier": "^3.6.2",
     "publint": "^0.3.12",
     "tsdown": "^0.12.9",
-    "typescript": "^5.8.3",
-    "unplugin-unused": "^0.5.1"
+    "typescript": "^5.8.3"
   },
-  "prettier": "./dist/index.mjs"
+  "prettier": "./src/index.ts"
 }
