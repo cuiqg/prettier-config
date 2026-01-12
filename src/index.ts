@@ -1,31 +1,15 @@
-import * as pluginOxc from '@prettier/plugin-oxc'
-import type { Config } from 'prettier'
-import * as pluginTailwindcss from 'prettier-plugin-tailwindcss'
+// @ts-check
+import { fileURLToPath } from 'node:url'
+
 /**
  * @see https://prettier.io/docs/en/configuration.html
+ * @type {import('prettier').Config & import('prettier-plugin-tailwindcss').PluginOptions}
  */
-const config: Config & pluginTailwindcss.PluginOptions = {
-  experimentalTernaries: false,
-  printWidth: 100,
-  tabWidth: 2,
+export default {
   useTabs: false,
   semi: false,
   singleQuote: true,
-  quoteProps: 'as-needed',
-  jsxSingleQuote: true,
   trailingComma: 'all',
-  bracketSpacing: true,
-  bracketSameLine: true,
-  arrowParens: 'avoid',
-  requirePragma: false,
-  insertPragma: false,
-  proseWrap: 'preserve',
-  htmlWhitespaceSensitivity: 'css',
-  vueIndentScriptAndStyle: false,
-  endOfLine: 'lf',
-  embeddedLanguageFormatting: 'auto',
   singleAttributePerLine: true,
-  plugins: [pluginOxc, pluginTailwindcss],
+  plugins: [fileURLToPath(import.meta.resolve('@prettier/plugin-oxc')), 'prettier-plugin-tailwindcss']
 }
-
-export default config

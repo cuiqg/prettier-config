@@ -16,7 +16,7 @@
     "dist"
   ],
   "main": "./dist/index.cjs",
-  "types": "./dist/index-ng7FzSad.d.cts",
+  "types": "./dist/index-C1Hnm9af.d.cts",
   "module": "./dist/index.js",
   "exports": {
     ".": {
@@ -34,19 +34,20 @@
     "dev": "tsdown --watch",
     "release": "bumpp && npm publish",
     "format": "prettier -w .",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsgo --noEmit"
   },
   "dependencies": {
     "@prettier/plugin-oxc": "^0.0.4",
     "prettier-plugin-tailwindcss": "^0.7.2"
   },
   "devDependencies": {
+    "@cuiqg/eslint-config": "^2.8.17",
     "@types/node": "^24.0.10",
+    "@typescript/native-preview": "7.0.0-dev.20260112.1",
     "bumpp": "^9.4.1",
+    "eslint": "^9.39.2",
     "prettier": "^3.6.2",
-    "publint": "^0.3.12",
-    "tsdown": "^0.12.9",
-    "typescript": "^5.8.3"
+    "tsdown": "^0.12.9"
   },
   "prettier": "./src/index.ts"
 }
