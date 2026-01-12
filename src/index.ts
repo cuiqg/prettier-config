@@ -1,9 +1,6 @@
-// @ts-check
-import { fileURLToPath } from 'node:url'
-
 /**
  * @see https://prettier.io/docs/en/configuration.html
- * @type {import('prettier').Config & import('prettier-plugin-tailwindcss').PluginOptions}
+ * @type {@type {import('prettier').Config & import('prettier-plugin-tailwindcss').PluginOptions}}
  */
 export default {
   useTabs: false,
@@ -11,5 +8,7 @@ export default {
   singleQuote: true,
   trailingComma: 'all',
   singleAttributePerLine: true,
-  plugins: [fileURLToPath(import.meta.resolve('@prettier/plugin-oxc')), 'prettier-plugin-tailwindcss']
+  plugins: [
+    'prettier-plugin-tailwindcss'
+  ]
 }
