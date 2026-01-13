@@ -8,7 +8,5 @@ export default {
   singleQuote: true,
   trailingComma: 'all',
   singleAttributePerLine: true,
-  plugins: [
-    'prettier-plugin-tailwindcss'
-  ]
+  plugins: ['prettier-plugin-tailwindcss'],
 }
